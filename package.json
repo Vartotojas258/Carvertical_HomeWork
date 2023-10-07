@@ -2,10 +2,15 @@
   "name": "qa-homework",
   "private": true,
   "scripts": {
-    "postinstall": "playwright install",
-    "test": "playwright test"
+    "desktop-chrome": "npx playwright test e2e_tests --project=chromium --config=run_configs/playwright-base-config.ts --workers=2"
   },
   "devDependencies": {
     "@playwright/test": "^1.28.1"
+  },
+  "dependencies": {
+    "@types/lodash": "^4.14.199",
+    "dotenv": "^16.3.1",
+    "lodash": "^4.17.21",
+    "typescript": "^5.2.2"
   }
 }
