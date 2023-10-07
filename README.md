@@ -1,15 +1,20 @@
-# Homework for QA Candidate
+Carvertical Homework
+Welcome to the Carvertical Homework repository! This README will guide you through the setup process and running tests for this project.
 
-## Write a functional E2E automation test
+Getting Started
+To get started with this project, follow these simple steps:
 
-1. Clone this repository*
-2. Run `yarn` to install dependencies
-3. Write a test that will:
-   1. Visit [carVertical](https://www.carvertical.com)
-   2. In the VIN form, submit `SALLAAA146A396339` VIN
-   3. Once precheck has loaded, pick 3-report package
-   4. On the checkout page, apply `qahomework` voucher
-   5. **Validate that the total price is shown correctly**
-4. Share a link to the repository where we can review the test
+1. Clone the Repository
+First, clone this repository to your local machine. You can do this by running the following command in your terminal:
+`git clone https://github.com/your-username/project-name.git`
 
-\* This repo is set up to use [Playwright](https://playwright.dev), but you can use any framework you like as long as it uses TypeScript or JavaScript.
+2. Install Dependencies
+After cloning the repository, navigate to the project directory and install the required dependencies using Yarn. Run the following command:
+`cd project-name`
+`yarn`
+This will fetch and install all the necessary packages and libraries.
+
+3. Run Tests
+Once the dependencies are installed, you can execute the test suite. In this project, we have a specific script to run tests in a desktop Chrome environment. Run the following command to execute these tests:
+`npm run desktop-chrome`
+This will launch the tests in a Chrome browser
