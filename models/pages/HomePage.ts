@@ -15,8 +15,8 @@ export class HomePage extends BasePage {
         this.submit_button = page.locator('(//button[contains(@type, "submit")])[1]')
     }
 
-    async inputVinNumber() {
-        await this.vin_input.type("SALLAAA146A396339");
+    async inputVinNumber(vin: string) {
+        await this.vin_input.type(vin);
         await this.submit_button.click();
     }
 

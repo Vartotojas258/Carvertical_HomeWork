@@ -9,6 +9,7 @@ let homePage: HomePage;
 let precheckPage: PrecheckPage;
 let checkoutPage: CheckoutPage;
 
+const vin = process.env.VIN_NUMBER;
 const email = getRandomEmail();
 const voucher = "qahomework";
 const expected_total_amount = "35.61 €";
@@ -22,7 +23,7 @@ test.beforeEach(async ({ page }) => {
 
 test('Should submit VIN and apply voucher', async ({ page }) => {
   await homePage.handleCountryAndCookiesPopups();
-  await homePage.inputVinNumber();
+  await homePage.inputVinNumber(vin);
   await precheckPage.answerWhyReportNeeded();
   await precheckPage.selectThreeReports();
   await checkoutPage.enterEmail(email);
