@@ -23,7 +23,7 @@ test.beforeEach(async ({ page }) => {
 
 test('Should submit VIN and apply voucher', async ({ page }) => {
   await homePage.handleCountryAndCookiesPopups();
-  await homePage.inputVinNumber(vin);
+  await homePage.inputVinNumber(vin as string);
   await precheckPage.answerWhyReportNeeded();
   await precheckPage.selectThreeReports();
   await checkoutPage.enterEmail(email);
